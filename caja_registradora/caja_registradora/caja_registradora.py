@@ -8,7 +8,8 @@ ciclo = -1
 
 print("ingrese 1 para ingresar un código")
 print("ingrese 2 para ingresar un nombre de producto")
-print("ingrese 3 para salir del ciclo")
+print("ingrese 3 para ingresar un precio")
+print("ingrese 4 para ingresar una cantidad")
 while ciclo != 0:
     ciclo = int(input("introduce un número "))    
     if ciclo == 1:
@@ -22,6 +23,10 @@ while ciclo != 0:
     if ciclo == 3:
         precio = input("Introduce un precio")
         print("El precio del producto es", precio)
+        pass
+    if ciclo == 4:
+        cantidad = input("Introduce una cantidad")
+        print("La cantidad es", cantidad)
         pass
     print("ingrese 0 para salir del ciclo")
     
