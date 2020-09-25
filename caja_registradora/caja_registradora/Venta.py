@@ -7,3 +7,7 @@ class Venta(object):
 
     def __repr__(self):
         return (self.precio, self.cantidad)
+
+
+
+    
