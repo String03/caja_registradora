@@ -23,7 +23,7 @@ while ciclo != 0:
         print("El nombre del producto es ", descripcion)
         pass
     if ciclo == 3:
-        precio = int(input("Introduce un precio"))
+        precio = float(input("Introduce un precio"))
         print("El precio del producto es", precio)
         pass
     if ciclo == 4:
@@ -31,11 +31,11 @@ while ciclo != 0:
         print("La cantidad es", cantidad)
         pass
     if ciclo == 5:
-        porcentaje = input("introduce un porcentaje")
+        porcentaje = float(input("introduce un porcentaje de descuento"))
         print("el porcentaje es", porcentaje)
         pass
     if ciclo == 6:
-        subtotal.append(precio * cantidad);
+        subtotal.append(precio * cantidad - (precio * cantidad * (porcentaje/100)));
         print("total",subtotal)
         print("suma",sum(subtotal))
     print("ingrese 0 para salir del ciclo")
